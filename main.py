@@ -12,8 +12,8 @@ class Motor:
         self.numeroCilindros=numeroCilindros
         self.tipo=tipo
         self.registro=registro
-    def cambiarRegistro (self,registron):
-        self.registro=registron
+    def cambiarRegistro (self,registro):
+        self.registro=registro
     def asignarTipo(self,tipon):
         if tipon in ["gasolina", "electrico"]:
             self.tipo=tipon
@@ -42,4 +42,3 @@ class Auto:
             return "Auto original"
         else:
             return "Las piezas no son originales"
-        
