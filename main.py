@@ -18,13 +18,13 @@ class Motor:
         if tipon in ["gasolina", "electrico"]:
             self.tipo=tipon
 class Auto:
-    def __init__(self,modelo,precio,motor,marca,asientos=None,registro=None,cantidadCreados=0):
+    def __init__(self,modelo,precio,asientos=None,marca,motor,registro=None,cantidadCreados=0):
         self.modelo=modelo
         self.registro=registro
-        self.precio=precio
-        self.Motor=motor
-        self.marca=marca
         self.asientos=asientos if asientos is not None else[]
+        self.precio=precio
+        self.marca=marca
+        self.Motor=motor
         Auto.cantidadCreados=cantidadCreados
        
     def cantidadAsientos(self):
